@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="module" src="./assets/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <main>
+        <fieldset class="identité-class">
+            <legend>Identité</legend>
+            <div class="radio-style">
+                <div class="radio1">
+                     <label for="genre">
+                        Homme
+                        <input type="radio" id="genre" name="sexe" value="Homme" checked/>
+                    </label>
+                </div>
+                <div class="radio2">
+                    <label for="genre1">
+                        Femme 
+                        <input type="radio" id="genre1" name="sexe" value="Femme"/>
+                    </label>
+                </div>
+               
+            </div> 
+            <div class="style-identité">
+                <label for="nom">
+                        Nom :
+                    <input type="text" id="nom"/>
+                </label> 
+                <label for="prenom">
+                        Prénom :
+                    <input type="text" id="prenom"/>
+                </label>
+                <label for="email">
+                        E-mail :
+                    <input type="text" id="email"/>
+                </label> 
+            </div>
+        </fieldset>
+
+        <fieldset class="facturation-class">
+            <legend>Adresse de facturation</legend>
+            <div class="style-adresse-facture">
+                <label for="ville">
+                     Ville :
+                    <input type="text" id="rue"/>
+                </label> 
+                <label for="rue">
+                        Rue :
+                    <input type="text" id="rue"/>
+                </label>
+                <label for="code-postal">
+                        Code Postal :
+                    <input type="text" id="code-postal"/>
+                </label> 
+            </div>
+        </fieldset>
+
+        <fieldset class="livraison-class">
+            <legend>Adresse de livraison</legend>
+            <div class="style-adresse-livraison">
+                <label for="ville">
+                     Ville :
+                    <input type="text" id="rue"/>
+                </label> 
+                <label for="rue">
+                        Rue :
+                    <input type="text" id="rue"/>
+                </label>
+                <label for="code-postal">
+                        Code Postal :
+                    <input type="text" id="code-postal"/>
+                </label> 
+            </div>
+
+        </fieldset>
+    </main>
+</body>
+</html>
