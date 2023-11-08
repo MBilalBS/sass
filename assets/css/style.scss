@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     // border: 1px solid red;
-
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 32, 32);
 }
 main{
     display: flex;
@@ -19,7 +23,7 @@ main{
 }
 .identité-class{
     // padding: 20px;
-    height: 170px;
+    height: 200px;
     width: 50%;
 }
 .style-identité{
@@ -28,18 +32,21 @@ main{
     align-items: center;
 }
 .style-identité label{
-    margin: 10px;
+    margin: 15px;
 }
 .radio-style{
     display: flex; 
     justify-content: center;
 }
-
+.radio-style :hover{
+    cursor: pointer;
+}
 .style-adresse-facture{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin: 5px;
 }
 .style-adresse-facture label{
     margin: 5px;
@@ -52,7 +59,7 @@ main{
 
 .facturation-class{
     // padding: 20px;
-    height: 160px;
+    height: 220px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -61,7 +68,7 @@ main{
 
 .livraison-class{
     // padding: 20px;
-    height: 160px;
+    height: 220px;
     width: 50%;
 }
 
@@ -71,4 +78,24 @@ main{
 
 .radio2{
     margin-left: 15px;
+}
+ul{
+        overflow: auto ;
+    background-color: rgb(190, 188, 188);
+    position: absolute;
+    top: 293px; height: 70px;
+    // width: 300px;
+
+}
+ul li{
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// position: absolute;
+
+
+    
+}
+
+ul :hover{
+    cursor: pointer;
 }

@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 32, 32);
+}
+
 main {
   display: flex;
   align-items: center;
@@ -19,7 +25,7 @@ main {
 }
 
 .identité-class {
-  height: 170px;
+  height: 200px;
   width: 50%;
 }
 
@@ -30,7 +36,7 @@ main {
 }
 
 .style-identité label {
-  margin: 10px;
+  margin: 15px;
 }
 
 .radio-style {
@@ -38,11 +44,16 @@ main {
   justify-content: center;
 }
 
+.radio-style :hover {
+  cursor: pointer;
+}
+
 .style-adresse-facture {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 5px;
 }
 
 .style-adresse-facture label {
@@ -56,7 +67,7 @@ main {
 }
 
 .facturation-class {
-  height: 160px;
+  height: 220px;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -64,7 +75,7 @@ main {
 }
 
 .livraison-class {
-  height: 160px;
+  height: 220px;
   width: 50%;
 }
 
@@ -74,4 +85,21 @@ main {
 
 .radio2 {
   margin-left: 15px;
+}
+
+ul {
+  overflow: auto;
+  background-color: rgb(190, 188, 188);
+  position: absolute;
+  top: 293px;
+  height: 70px;
+}
+
+ul li {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+ul :hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
