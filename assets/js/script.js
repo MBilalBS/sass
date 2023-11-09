@@ -8,10 +8,10 @@ let prenom = document.getElementById("prenom").value
 let email = document.getElementById("email").value
 let adresseFacture = document.getElementById("rue-facture")
 let villeFacture = document.getElementById("ville-facture")
-let codePostalFacture = document.getElementById("code-postal")
-// let = document.getElementById("")
-// let = document.getElementById("")
-// let = document.getElementById("")
+let codePostalFacture = document.getElementById("code-postal-fac")
+let rueLivraison= document.getElementById("rue-liv")
+let villeLivraison = document.getElementById("ville-liv")
+let codePostalLiv= document.getElementById("code-postal-liv")
 
 
 adresseFacture.addEventListener('input', async function () {
@@ -32,7 +32,8 @@ adresseFacture.addEventListener('input', async function () {
     arrayListAdresse.features.forEach(element => {
         let proprietes = element.properties
     });
-    
+
+  
 
     
     
@@ -45,9 +46,13 @@ adresseFacture.addEventListener('input', async function () {
             listeEnfant.addEventListener("click", (event) => {
                 // console.log(adresseFacture);
                 // console.log(event.target.textContent.split(" "));
-        adresseFacture.value = event.target.textContent = (arrayListAdresse.features[i].properties.name);
-        villeFacture.value = event.target.textContent = (arrayListAdresse .features[i].properties.city);
-        codePostalFacture.value = event.target.textContent = (arrayListAdresse .features[i].properties.postcode);
+        adresseFacture.value = arrayListAdresse.features[i].properties.name;
+        villeFacture.value = arrayListAdresse .features[i].properties.city;
+        codePostalFacture.value = arrayListAdresse .features[i].properties.postcode;
+        rueLivraison.value = arrayListAdresse .features[i].properties.name;
+        villeLivraison.value = arrayListAdresse .features[i].properties.city;
+        codePostalLiv.value = arrayListAdresse .features[i].properties.postcode;
+        listeParent.innerHTML = "";
       });
     }
 

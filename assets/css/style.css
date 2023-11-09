@@ -2,12 +2,24 @@
 * {
   margin: 0;
   padding: 0;
+  color: rgb(173, 128, 43);
+}
+
+.font-style {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 h1 {
+  font-size: 50px;
   display: flex;
   justify-content: center;
-  color: rgb(255, 32, 32);
+  color: white;
+  margin: 50px;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
 }
 
 main {
@@ -27,6 +39,7 @@ main {
 .identité-class {
   height: 200px;
   width: 50%;
+  border: 5px solid;
 }
 
 .style-identité {
@@ -39,9 +52,14 @@ main {
   margin: 15px;
 }
 
+.style-identité label input {
+  color: black;
+}
+
 .radio-style {
   display: flex;
   justify-content: center;
+  color: rgb(255, 32, 32);
 }
 
 .radio-style :hover {
@@ -57,7 +75,15 @@ main {
 }
 
 .style-adresse-facture label {
-  margin: 5px;
+  margin: 20px;
+}
+
+.style-adresse-facture label input {
+  color: black;
+}
+
+.style-adresse-livraison label input {
+  color: black;
 }
 
 .style-adresse-livraison {
@@ -66,17 +92,44 @@ main {
   align-items: center;
 }
 
+.style-adresse-livraison label {
+  margin: 20px;
+}
+
 .facturation-class {
   height: 220px;
   width: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
+  border: 5px solid;
 }
 
 .livraison-class {
   height: 220px;
   width: 50%;
+  border: 5px solid;
+}
+
+.livraison-class legend {
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 0px 10px;
+  color: white;
+}
+
+.facturation-class legend {
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 0px 10px;
+  color: white;
+}
+
+.identité-class legend {
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 0px 10px;
+  color: white;
 }
 
 .radio1 {
@@ -91,8 +144,8 @@ ul {
   overflow: auto;
   background-color: rgb(190, 188, 188);
   position: absolute;
-  top: 293px;
-  height: 70px;
+  top: 440px;
+  height: 75px;
 }
 
 ul li {
